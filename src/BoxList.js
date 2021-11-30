@@ -25,7 +25,9 @@ const BoxList = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        marginBottom: "40px",
       }}>
+      <h1>Color Box Maker</h1>
       <NewBoxForm addBox={addBox} />
 
       {boxes.map((box) => (
