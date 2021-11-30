@@ -25,6 +25,7 @@ const NewBoxForm = ({ addBox }) => {
       <input
         type='text'
         name='width'
+        id='width'
         value={formData.width}
         onChange={handleChange}></input>
 
@@ -32,6 +33,7 @@ const NewBoxForm = ({ addBox }) => {
       <input
         type='text'
         name='height'
+        id='height'
         value={formData.height}
         onChange={handleChange}></input>
 
@@ -39,6 +41,7 @@ const NewBoxForm = ({ addBox }) => {
       <input
         type='color'
         name='color'
+        id='color'
         onChange={handleChange}
         value={formData.color}></input>
       <button type='submit'>Add Box!</button>

@@ -35,6 +35,10 @@ const TodoList = () => {
     }
   };
 
+  const editTodo = (evt) => {
+    // render a input text field bellow the item
+  };
+
   const listTodos = () => {
     return (
       <ul>
@@ -42,6 +46,7 @@ const TodoList = () => {
           <li key={todo.id} id={todo.id} className='todo'>
             <b>{todo.content}</b>, at :{todo.date}
             <input type='radio' onClick={markDone} />
+            <button onClick={editTodo}>Edit</button>
             <button onClick={removeTodo}>X</button>
           </li>
         ))}
